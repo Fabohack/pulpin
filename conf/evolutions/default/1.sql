@@ -18,6 +18,7 @@ create table tbl_actividades (
   act_enlacedocumento       varchar(255),
   act_fechainicio           timestamp,
   act_fechafin              timestamp,
+  activi_pro_id             bigint,
   constraint pk_tbl_actividades primary key (act_id))
 ;
 
@@ -72,6 +73,8 @@ create sequence tbl_persona_seq;
 
 create sequence tbl_proyectos_seq;
 
+alter table tbl_actividades add constraint fk_tbl_actividades_Activi_1 foreign key (activi_pro_id) references tbl_proyectos (pro_id);
+create index ix_tbl_actividades_Activi_1 on tbl_actividades (activi_pro_id);
 
 
 

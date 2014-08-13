@@ -14,6 +14,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Digits;
 
 import play.data.validation.Constraints.MaxLength;
 import play.data.validation.Constraints.Required;
@@ -33,7 +34,7 @@ public class Proyectos extends Model implements BasicModel<Long> {
 	private String Nombre;
 	@MaxLength(256)	@Column(name="pro_descripcion",length = 256)
 	private String Descripcion;
-	@Column(name="pro_costo")
+	@Column(name="pro_costo") @Digits(integer=9, fraction=2)
 	private Double Costo;
 	@Column(name="pro_responsable")
 	private String Responsable;

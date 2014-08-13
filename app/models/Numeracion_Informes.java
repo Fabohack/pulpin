@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.Size;
 
 import play.data.validation.Constraints.MaxLength;
 import play.data.validation.Constraints.Required;
@@ -26,7 +27,7 @@ public class Numeracion_Informes extends Model implements BasicModel<Long>{
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long num_id;
 	
-	@Basic	@Required	@Column(name="num_codigoinforme")
+	@Basic	@Required	@Column(name="num_codigoinforme")@Size(min = 21, max = 21)
 	private String Codigo; //ESTE PUEDE SER IN-YACHAY-GI-DSI-0001
 	@Required @Column(name="num_fecha")
 	private Date Fecha;			//LA FECHA DEL INGRESO DE LA LINEA

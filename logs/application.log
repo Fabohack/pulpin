@@ -16,3 +16,74 @@ Converter:class java.lang.Long : play.utils.meta.convert.LongConverter@2592459a
 2014-08-13 13:38:53,032 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
+2014-08-13 13:59:02,162 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost/pulpo
+
+2014-08-13 13:59:04,811 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-1 
+Converter:class java.lang.Double : play.utils.meta.convert.DoubleConverter@1066e02
+
+2014-08-13 13:59:04,814 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-1 
+Converter:class java.lang.Integer : play.utils.meta.convert.IntegerConverter@365ff433
+
+2014-08-13 13:59:04,814 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-1 
+Converter:class java.lang.Long : play.utils.meta.convert.LongConverter@5e3bd62e
+
+2014-08-13 13:59:04,837 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-08-13 13:59:05,590 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost/pulpo
+
+2014-08-13 13:59:05,697 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-1 
+Converter:class java.lang.Double : play.utils.meta.convert.DoubleConverter@3e388588
+
+2014-08-13 13:59:05,698 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-1 
+Converter:class java.lang.Integer : play.utils.meta.convert.IntegerConverter@5c848873
+
+2014-08-13 13:59:05,699 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-1 
+Converter:class java.lang.Long : play.utils.meta.convert.LongConverter@5f9f5874
+
+2014-08-13 13:59:05,753 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-08-13 14:03:32,171 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6j7j3h7co - Internal server error, for (GET) [/app] ->
+
+play.PlayExceptions$CompilationException: Compilation error[error: '.' expected]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14$$anonfun$apply$16.apply(PlayReloader.scala:304) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:304) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2$$anonfun$apply$14.apply(PlayReloader.scala:298) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:298) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:296) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.10.3.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:296) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+
+2014-08-13 14:07:54,970 - [INFO] - from play in play-internal-execution-context-3 
+database [default] connected at jdbc:postgresql://localhost/pulpo
+
+2014-08-13 14:07:55,084 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-3 
+Converter:class java.lang.Double : play.utils.meta.convert.DoubleConverter@2c07a0e5
+
+2014-08-13 14:07:55,085 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-3 
+Converter:class java.lang.Integer : play.utils.meta.convert.IntegerConverter@518d605f
+
+2014-08-13 14:07:55,086 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-3 
+Converter:class java.lang.Long : play.utils.meta.convert.LongConverter@644ecfc8
+
+2014-08-13 14:07:55,109 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+

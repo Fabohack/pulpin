@@ -8,9 +8,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
-import com.avaje.ebean.annotation.EnumValue;
+import javax.validation.constraints.Future;
 
 import play.data.validation.Constraints.MaxLength;
 import play.data.validation.Constraints.Required;
@@ -63,9 +63,14 @@ public class Actividades extends Model implements BasicModel<Long> {
 	@Required @Column(name="act_fechainicio")
 	private Date Fecha_Inicio;  //NORMA ISO 21500:2013
 	
-	@Required @Column(name="act_fechafin")
+	@Required @Column(name="act_fechafin") @Future //La fecha debes ser mayor que hoy
 	private Date Fecha_Fin;  //NORMA ISO 21500:2013
-
+	
+	//DECLARACION PARA LA RELACION DE LAS TABLAS
+	@ManyToOne
+	public Proyectos Activi; 
+	
+	
 	public Long getId() {
 		return this.Id;
 	}
@@ -193,18 +198,7 @@ public class Actividades extends Model implements BasicModel<Long> {
 		return builder.toString();
 	}
 
-	static enum Select {
-		@EnumValue("1")
-		OPTION1,
-
-		@EnumValue("2")
-		OPTION2,
-
-		@EnumValue("3")
-		OPTION3,
-
-		;
-	}
+	
 
 	@Override
 	public Long getKey() {
