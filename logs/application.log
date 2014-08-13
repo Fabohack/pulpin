@@ -1,0 +1,18 @@
+2014-08-13 13:38:33,291 - [INFO] - from play in pool-4-thread-1 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2014-08-13 13:38:52,085 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:postgresql://localhost/pulpo
+
+2014-08-13 13:38:52,895 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-1 
+Converter:class java.lang.Double : play.utils.meta.convert.DoubleConverter@72e705c4
+
+2014-08-13 13:38:52,897 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-1 
+Converter:class java.lang.Integer : play.utils.meta.convert.IntegerConverter@71d3a181
+
+2014-08-13 13:38:52,897 - [INFO] - from play.utils.meta.cp.ClasspathScanningConverterRegistry in play-internal-execution-context-1 
+Converter:class java.lang.Long : play.utils.meta.convert.LongConverter@2592459a
+
+2014-08-13 13:38:53,032 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
