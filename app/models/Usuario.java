@@ -78,6 +78,10 @@ public class Usuario extends Model implements BasicModel<Long> {
 
 	@Override
 	public void setKey(Long c) {this.Id = c;}
-
+	
+	public String toString(){
+		return Nombre;
+		
+	}
 
 }
